@@ -18,7 +18,7 @@ body {
 
 /* Header */
 .bg-primary-gradient {
-    background: linear-gradient(135deg, #202045 0%, #0c0c0c 100%);
+    background: linear-gradient(135deg, #101027 0%, #0c0c0c 100%);
 }
 
 .navbar-brand {
@@ -189,7 +189,7 @@ body {
 
 /* Newsletter */
 .newsletter {
-    background: linear-gradient(135deg, #112543 0%, #0b0b0b 100%);
+    background: linear-gradient(135deg, #456491 0%, #0b0b0b 100%);
 }
 
 .newsletter-form .form-control {
