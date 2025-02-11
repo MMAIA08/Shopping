@@ -1,0 +1,48 @@
+/* Login Card */
+.login-card {
+    border: none;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.login-card .input-group-text {
+    background: white;
+    border-right: none;
+}
+
+.login-card .form-control {
+    border-left: none;
+}
+
+.login-card .form-control:focus {
+    box-shadow: none;
+}
+
+/* Toggle Password */
+.toggle-password {
+    cursor: pointer;
+    background: white;
+    border-left: none;
+}
+
+.toggle-password.active i {
+    color: var(--primary-color);
+}
+
+/* Validação */
+.was-validated .form-control:invalid,
+.form-control.is-invalid {
+    border-color: #dc3545;
+    background-image: none;
+}
+
+.was-validated .form-control:valid,
+.form-control.is-valid {
+    border-color: #198754;
+    background-image: none;
+}
+
+/* Efeitos Hover */
+.btn-outline-dark:hover {
+    background: #f8f9fa;
+}
