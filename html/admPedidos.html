@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedidos</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Administração de Pedidos</h1>
+    </header>
+
+    <section class="orders-list">
+        <div class="order-card" id="order1">
+            <h3>Pedido #1</h3>
+            <p>Produto: Produto 1 - Quantidade: 1</p>
+            <p>Total: R$ 19,99</p>
+            <p>Método de Pagamento: Pix</p>
+            <p>Status: <span class="status" id="status1">Aguardando Pagamento</span></p>
+            <button onclick="updateStatus('1', 'Em Andamento')">Iniciar Preparação</button>
+            <button onclick="updateStatus('1', 'Entregue')">Marcar como Entregue</button>
+        </div>
+    </section>
+
+    <script src="/js/script.js"></script>
+</body>
+</html>

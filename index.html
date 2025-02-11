@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping SoMa - Sua Plataforma de Compras Inteligente</title>
+    
+    <!-- Meta Tags SEO -->
+    <meta name="description" content="Compare preços entre diversos estabelecimentos e faça suas compras online com entrega rápida">
+    <meta name="keywords" content="compras online, supermercado, farmácia, bebidas, construção, tecnologia">
+    
+    <!-- Links Externos -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="/css/style.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="favicon.png">
+</head>
+<body>
+    <!-- Header -->
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary-gradient shadow-sm">
+            <div class="container">
+                <!-- Logo -->
+                <a class="navbar-brand" href="index.html" aria-label="Voltar para página inicial">
+                    <img src="/img/logo.webp" alt="Shopping SoMa" width="60" class="brand-logo">
+                    <span class="brand-text">Shopping SoMa</span>
+                </a>
+
+                <!-- Menu Mobile -->
+                <button class="navbar-toggler" type="button" 
+                        data-bs-toggle="collapse" data-bs-target="#mainNav"
+                        aria-controls="mainNav" aria-expanded="false" 
+                        aria-label="Alternar navegação">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Menu Principal -->
+                <div class="collapse navbar-collapse" id="mainNav">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <!-- Item Início -->
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">
+                                <i class="bi bi-house-door"></i> Início
+                            </a>
+                        </li>
+
+                        <!-- Dropdown Categorias -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" 
+                               id="categoriesDropdown" role="button" 
+                               data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="bi bi-grid-3x3-gap"></i> Categorias
+                            </a>
+                            <div class="dropdown-menu dropdown-megamenu">
+                                <div class="row g-4 p-3">
+                                    <!-- Coluna 1 -->
+                                    <div class="col-lg-4">
+                                        <div class="dropdown-header">
+                                            <i class="bi bi-cart3"></i> Alimentos
+                                        </div>
+                                        <a href="markets.html" class="dropdown-item">
+                                            <i class="bi bi-basket2"></i> Supermercados
+                                            <span class="badge bg-success">12+</span>
+                                        </a>
+                                        <a href="drinks.html" class="dropdown-item">
+                                            <i class="bi bi-cup-straw"></i> Bebidas
+                                        </a>
+                                    </div>
+
+                                    <!-- Coluna 2 -->
+                                    <div class="col-lg-4">
+                                        <div class="dropdown-header">
+                                            <i class="bi bi-heart-pulse"></i> Saúde
+                                        </div>
+                                        <a href="pharmacies.html" class="dropdown-item">
+                                            <i class="bi bi-capsule"></i> Farmácias
+                                            <span class="badge bg-danger">24h</span>
+                                        </a>
+                                        <a href="cosmetics.html" class="dropdown-item">
+                                            <i class="bi bi-bag-heart"></i> Cosméticos
+                                        </a>
+                                    </div>
+
+                                    <!-- Coluna 3 -->
+                                    <div class="col-lg-4">
+                                        <div class="dropdown-header">
+                                            <i class="bi bi-tools"></i> Construção
+                                        </div>
+                                        <a href="construction.html" class="dropdown-item">
+                                            <i class="bi bi-hammer"></i> Materiais
+                                        </a>
+                                        <a href="decoration.html" class="dropdown-item">
+                                            <i class="bi bi-flower1"></i> Decoração
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <!-- Outros Itens -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="orders.html">
+                                <i class="bi bi-clipboard-check"></i> Pedidos
+                            </a>
+                        </li>
+                    </ul>
+
+                    <!-- Search -->
+                    <form class="d-flex search-container" role="search">
+                        <div class="input-group">
+                            <input type="search" class="form-control search-input" 
+                                   placeholder="Buscar produtos..." 
+                                   aria-label="Buscar produtos">
+                            <button class="btn btn-light search-button" type="submit">
+                                <i class="bi bi-search"></i>
+                            </button>
+                        </div>
+                    </form>
+
+                    <!-- Ícones Direitos -->
+                    <div class="header-icons">
+                        <a href="cart.html" class="btn btn-light cart-button">
+                            <i class="bi bi-cart3"></i>
+                            <span class="cart-counter">0</span>
+                        </a>
+                        <a href="login.html" class="btn btn-light ms-2">
+                            <i class="bi bi-person-circle"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main class="main-content container py-5">
+        <!-- Banner Principal -->
+        <!-- Seção Banners Patrocinados -->
+<section class="sponsored-banners mb-5">
+    <div class="container">       
+        <!-- Carrossel -->
+        <div id="bannerCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner rounded-4">
+                <!-- Item 1 -->
+                <div class="carousel-item active">
+                    <a href="#!" class="d-block">
+                        <img src="/img/1.jpeg" class="d-block w-100" alt="Oferta de Eletrônicos" loading="lazy">
+                    </a>
+                </div>
+                
+                <!-- Item 2 -->
+                <div class="carousel-item">
+                    <a href="#!" class="d-block">
+                        <img src="/img/2.jpeg" class="d-block w-100" alt="Promoção de Moda" loading="lazy">
+                    </a>
+                </div>
+                
+                <!-- Item 3 -->
+                <div class="carousel-item">
+                    <a href="#!" class="d-block">
+                        <img src="/img/3.jpeg" class="d-block w-100" alt="Descontos em Cosméticos" loading="lazy">
+                    </a>
+                </div>
+                <div class="carousel-item">
+                    <a href="#!" class="d-block">
+                        <img src="/img/4.jpeg" class="d-block w-100" alt="Descontos em Cosméticos" loading="lazy">
+                    </a>
+                </div>
+            </div>
+
+            <!-- Controles -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#bannerCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#bannerCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Próximo</span>
+            </button>
+        </div>
+    </div>
+</section>
+    
+        <!-- Lojas em Destaque -->
+        <section class="featured-stores mb-5">
+            <div class="row row-cols-2 row-cols-md-4 g-4">
+                <div class="col">
+                    <div class="store-card card h-100">
+                        <img src="store1.jpg" class="card-img-top" alt="Supermercado Preço Bom">
+                        <div class="card-body">
+                            <h5 class="card-title">Supermercado Preço Bom</h5>
+                            <p class="card-text">Aberto até 22h</p>
+                            <a href="#" class="btn btn-outline-primary">Visitar Loja</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Adicionar mais 3 lojas -->
+            </div>
+        </section>
+    
+        <!-- Ofertas Relâmpago -->
+        <section class="flash-sales mb-5">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <h2 class="section-title m-0"> Ofertas Relâmpago</h2>
+                <div class="sale-timer badge bg-danger">
+                    <i class="bi bi-clock"></i> 02:15:33
+                </div>
+            </div>
+            <div class="row row-cols-2 row-cols-md-4 g-4">
+                <!-- Produtos em oferta -->
+                <div class="col">
+                    <div class="product-card card h-100">
+                        <span class="badge bg-danger position-absolute m-2">-30%</span>
+                        <img src="product1.jpg" class="card-img-top" alt="Smartphone XYZ">
+                        <div class="card-body">
+                            <h5 class="card-title">Smartphone XYZ</h5>
+                            <p class="text-muted"><s>R$ 1.999</s></p>
+                            <p class="h4 text-danger">R$ 1.399</p>
+                            <button class="btn btn-primary w-100">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Adicionar mais produtos -->
+            </div>
+        </section>
+    
+        <!-- Blog/Novidades -->
+        <section class="blog-section mb-5">
+            <h2 class="section-title mb-4">Dicas e Novidades</h2>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="blog-post card h-100">
+                        <img src="blog1.jpg" class="card-img-top" alt="Como economizar">
+                        <div class="card-body">
+                            <h5 class="card-title">5 Dicas para Economizar nas Compras</h5>
+                            <p class="card-text">Aprenda estratégias simples para gastar menos...</p>
+                            <a href="#" class="btn btn-link">Ler mais</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Adicionar mais posts -->
+            </div>
+        </section>
+    
+        <!-- Newsletter -->
+        <section class="newsletter bg-primary text-white py-5 rounded-3">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h2><i class="bi bi-envelope-open"></i> Receba Ofertas</h2>
+                    <p>Cadastre-se para receber promoções exclusivas</p>
+                </div>
+                <div class="col-md-6">
+                    <form class="newsletter-form">
+                        <div class="input-group">
+                            <input type="email" class="form-control" placeholder="Seu melhor e-mail">
+                            <button class="btn btn-light" type="button">Cadastrar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer bg-dark text-white mt-auto">
+        <div class="container py-4">
+            <p class="text-center mb-0">
+                © 2024 Shopping SoMa - Todos os direitos reservados
+            </p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/script.js"></script>
+</body>
+</html>

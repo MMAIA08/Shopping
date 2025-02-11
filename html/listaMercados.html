@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercados</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Mercados Disponíveis</h1>
+        <input type="text" id="searchMarket" placeholder="Buscar mercados..." onkeyup="filterMarkets()">
+    </header>
+
+    <section class="market-list">
+        <div class="market-card">
+            <h3>Mercado A</h3>
+            <p>Avaliação: ⭐⭐⭐⭐☆</p>
+            <button onclick="selectMarket('Mercado A')">Ver Produtos</button>
+        </div>
+        <div class="market-card">
+            <h3>Mercado B</h3>
+            <p>Avaliação: ⭐⭐⭐⭐⭐</p>
+            <button onclick="selectMarket('Mercado B')">Ver Produtos</button>
+        </div>
+    </section>
+
+    <script src="/js/script.js"></script>
+</body>
+</html>
